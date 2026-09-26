@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esmc-similarity"
+version = "0.1.0"
+description = "Local ESM-C protein similarity with optional eggNOG annotations"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Peter Treit"}]
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+embed = ["esm==3.1.3", "numpy<2", "torch>=2.6"]
+test = ["pytest>=7"]
+
+[project.scripts]
+esmc-similarity = "esmc_similarity:main"
+
+[tool.setuptools]
+py-modules = ["esmc_similarity"]

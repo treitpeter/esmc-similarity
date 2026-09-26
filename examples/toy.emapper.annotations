@@ -1,0 +1,4 @@
+## Synthetic parser fixture, NOT biological annotations
+#query	seed_ortholog	evalue	score	COG_category	Description	Preferred_name	GOs	EC	KEGG_ko	PFAMs
+toy_a	fixture.seed_a	1e-20	100	S	Synthetic annotation used only to check ID joins	toy_label	-	-	-	-
+toy_a_copy	fixture.seed_a	1e-20	100	S	Synthetic annotation used only to check ID joins	toy_label	-	-	-	-
